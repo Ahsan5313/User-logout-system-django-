@@ -1,0 +1,24 @@
+{% extends 'common.html' %} 
+
+{% block title %}
+
+Loging
+
+{% endblock title %}
+
+
+{% block content %}
+
+<div class='container col-md-6 offset-3'>
+  
+<form action="" class="form-gourp" method="POST">
+  {% csrf_token %}
+  <h3 class="text-center mt-5 pt-5">Log In</h3><hr><br>
+   <input type="text" name="username" class="form-control" placeholder="Enter you username" id="" required><br>
+   <input type="password" name="password" class="form-control" placeholder="Enter your password" id="" required><br>
+   <input type="submit" value="Submit" class="form-control btn btn-info" >
+</form>
+
+</div>
+{% endblock content %}
+

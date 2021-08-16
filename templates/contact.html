@@ -1,0 +1,26 @@
+{% extends 'common.html' %}
+{% block title %}
+Contact
+{% endblock title %}
+
+{% block content %}
+
+<div class="mt-5 mb-5 pt-5 pb-5 container">
+
+    <form action="" method='POST' class="form-group m-auto mr-auto ml-auto col-md-6">
+    {% csrf_token %}
+      <h3 class="text-center">Contact Page</h3>
+      <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required><br>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required><br>
+
+       <textarea name="comment" id="comment" class="form-control" cols="30" rows="10" placeholder="Enter your query here..."></textarea><br>
+
+      <input type="submit" class="btn btn-info form-control" value="Submit">    
+    
+    </form>
+
+</div>
+
+{% endblock content %}
+
+
